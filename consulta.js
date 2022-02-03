@@ -26,7 +26,6 @@ const agregarCurso = async (nombre, nivel, fecha, duracion) => {
 
     try {
         const result = await pool.query(inserta);
-
         return result;
     } catch (error_inserta) {
         console.log('Error inserción');
@@ -52,11 +51,8 @@ async function editarCurso(id, nombre, nivelTecnico, fechaInicio, duracion) {
             text: `UPDATE cursos SET nombre = $2, nivel = $3, fecha = $4, duracion= $5 WHERE id = $1 RETURNING *`,
             values: [id, nombre, nivelTecnico, fechaInicio, duracion]
         }
-
         const result = await pool.query(res);
         return result
-
-
     } catch (e) {
         console.log(e);
     }
