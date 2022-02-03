@@ -1,0 +1,22 @@
+{
+  "name": "desafiogestioncursos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consulta.js",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.2.1",
+    "fs": "0.0.1-security",
+    "pg": "^8.7.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
